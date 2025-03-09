@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<title>Order Status</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2><b>Status for order : </b> {{ .id}}</h2>
+  <b>Order placed on : {{ .orderDate}}</b>
+  <hr>
+  <div class="w3-light-grey w3-round-xlarge">
+    <div class="w3-container w3-orange w3-round-xlarge" style="width:50%">{{ .status}}</div>
+  </div>
+  <br>
+  <b>Last Updated on : {{ .statusDate}}</b>
+
+  <hr>
+  <b>Total Amount : {{ .total}} </b>
+  <br>
+  <b>Address : </b> {{ .city}}, {{ .state}}, {{ .pincode}}
+</div>
+
+</body>
+</html>

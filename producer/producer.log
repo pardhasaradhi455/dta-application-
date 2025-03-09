@@ -1,0 +1,28 @@
+{
+  "file": "D:/delivery-tracking-demo-main/producer/logger/logger.go:42",
+  "func": "delivery_tracking_api/producer/logger.Infoln",
+  "level": "info",
+  "msg": "logger initialized",
+  "time": "03-04-2025 21:34:42"
+}
+{
+  "file": "D:/delivery-tracking-demo-main/producer/logger/logger.go:42",
+  "func": "delivery_tracking_api/producer/logger.Infoln",
+  "level": "info",
+  "msg": "router initializing",
+  "time": "03-04-2025 21:34:42"
+}
+{
+  "file": "D:/delivery-tracking-demo-main/producer/logger/logger.go:42",
+  "func": "delivery_tracking_api/producer/logger.Infoln",
+  "level": "info",
+  "msg": "Ready to produce events",
+  "time": "03-04-2025 21:34:42"
+}
+{
+  "file": "D:/delivery-tracking-demo-main/producer/logger/logger.go:42",
+  "func": "delivery_tracking_api/producer/logger.Infoln",
+  "level": "info",
+  "msg": "Produced event to topic : orders key : 1001 value : {\"OrderId\":\"1001\",\"OrderDate\":\"15-08-2024 15:04:05\",\"OrderTotal\":234.55,\"Status\":{\"State\":\"placed\",\"StatusDate\":\"15-08-2024 15:04:05\"},\"Address\":{\"City\":\"bangalore\",\"State\":\"karnataka\",\"Pincode\":560037}}",
+  "time": "03-04-2025 21:34:42"
+}
