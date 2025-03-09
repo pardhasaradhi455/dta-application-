@@ -19,7 +19,7 @@ pipeline{
         stage("Upload to Docker HUB"){
             steps{
                 bat """
-                docker login
+                echo "Viratkohli#18" | docker login --username "pardha1024" --password-stdin
 
                 docker push pardha1024/dta-producer
 
