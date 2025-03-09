@@ -3,30 +3,21 @@ pipeline{
     stages{
         stage("Build producer"){
             steps{
+                bat "docker login docker.io -u pardha1024 -p Viratkohli#18"
                 bat "docker build -t pardha1024/dta-producer producer/"
+                bat "docker push pardha1024/dta-producer"
             }
         }
         stage("Build Consumer 1"){
             steps{
                 bat "docker build -t pardha1024/dta-consumer1 consumer1/"
+                bat "docker push pardha1024/dta-consumer1"
             }
         }
         stage("Build BadgerDB 1"){
             steps{
                 bat "docker build -t pardha1024/dta-consumer1db consumer1db/"
-            }
-        }
-        stage("Upload to Docker HUB"){
-            steps{
-                bat """
-                docker login docker.io -u pardha1024 -p Viratkohli#18
-
-                docker push pardha1024/dta-producer
-
-                docker push pardha1024/dta-consumer1
-
-                docker push pardha1024/dta-consumer1db
-                """
+                bat "docker push pardha1024/dta-consumer1db"
             }
         }
         stage("Clean up"){
